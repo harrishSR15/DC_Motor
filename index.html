@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electromagnet Motor Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧲 Electromagnetic DC Motor Simulation with Magnetic Field</h1>
+
+  <div class="motor">
+    <div class="magnet north">N</div>
+    <div class="magnet south">S</div>
+
+    <!-- Magnetic field lines -->
+    <div class="field-line" style="top:40px;"></div>
+    <div class="field-line" style="top:80px;"></div>
+    <div class="field-line" style="top:120px;"></div>
+    <div class="field-line" style="top:160px;"></div>
+    <div class="field-line" style="top:200px;"></div>
+
+    <div class="rotor" id="rotor">
+      <div class="coil top" id="coilTop"></div>
+      <div class="coil bottom" id="coilBottom"></div>
+    </div>
+
+    <div class="shaft"></div>
+  </div>
+
+  <div class="controls">
+    <button id="onBtn">Power ON</button>
+    <button id="offBtn">Power OFF</button>
+    <button id="reverseBtn">Reverse Current</button>
+    <br><br>
+    <button id="decreaseBtn">- Speed</button>
+    <span id="speedDisplay">Speed: 3</span>
+    <button id="increaseBtn">+ Speed</button>
+  </div>
+
+  <p id="status">Status: Motor is OFF</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    
